@@ -19,6 +19,19 @@ class DockingStation
 		@dock_to = lambda { |p| @@dock[p] = "Occupied"; puts "The bike was stored in position #{p.to_s.chars[-1].to_i}"}
 	end
 
+	def menu
+		choices = {
+			:"1" => "dock",
+			:"2" => "release" 
+		}
+
+		puts "M E N U"
+		choices.each { |key, value|
+			sleep(1.2)
+			puts "#{key} - #{value}"
+		}	
+	end
+
 	def full?
 		@@dock.values.count("Occupied") == 10 ? true : false
 	end
@@ -35,7 +48,6 @@ class DockingStation
 					break
 				end
 			}
-
 		when "release"				
 			@@dock.each { |position,value|
 				if value == "Occupied"
