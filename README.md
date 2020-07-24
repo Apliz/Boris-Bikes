@@ -26,8 +26,8 @@ program is used through the `action` method and possible choices can be viewed w
 
 ## User Stories
 
-As a member of the public,
-So that I am not confused and charged unnecessarily,
+As a member of the public,  
+So that I am not confused and charged unnecessarily,  
 Docking stations **will** release a bike is one is _present_.
 
 ```ruby
@@ -38,8 +38,8 @@ docking_station.action("release")
 
 ---
 
-As a technician,
-So that I can control the distribution of bikes,
+As a technician,  
+So that I can control the distribution of bikes,  
 Docking stations **will** dock a bike if  _space is available_.
 
 ```ruby
@@ -50,8 +50,8 @@ docking_station.action("dock")
 
 ---
 
-As a member of the public,
-So I can decide which station to use,
+As a member of the public,  
+So I can decide which station to use,  
 I want to **check** that a bike is available.
 
 ```ruby
